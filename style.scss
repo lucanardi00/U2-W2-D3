@@ -1,0 +1,68 @@
+$sans-serif: 'Arial', 'Helvetica', sans-serif;
+$full-width: 100%;
+$nav-color: gray;
+$nav-height: 50px;
+$logo-width: 40px;
+$list-type: none;
+$margin-0: 0;
+$padding-0: 0;
+$padding-10: 10px;
+$logo-adjust: 5px;
+$logo-pos: relative;
+$nav-position: right;
+$flex: flex;
+$spb: space-between;
+
+body {
+  width: $full-width;
+}
+
+nav {
+  background-color: $nav-color;
+  height: $nav-height;
+}
+
+.fas {
+  font-size: $logo-width;
+  padding: $padding-10;
+  position: $logo-pos;
+  bottom: $logo-adjust;
+}
+
+ul {
+  list-style-type: $list-type;
+  margin: $margin-0;
+  padding: $padding-0;
+  float: $nav-position;
+}
+
+li {
+  float: left;
+  margin-left: $padding-10;
+  margin-right: $padding-10;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  height: 35px;
+}
+
+.btn {
+  display: $flex;
+  justify-content: $spb;
+  width: $full-width;
+  margin: $margin-0 auto;
+}
+
+$colorList: red, green, blue;
+
+@each $elem in $colorList {
+  .btn-#{$elem} {
+    background-color: $elem;
+  }
+  button:hover {
+    scale: 1.2;
+  }
+}

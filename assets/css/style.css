@@ -1,0 +1,66 @@
+body {
+  width: 100%;
+}
+
+nav {
+  background-color: gray;
+  height: 50px;
+}
+
+.fas {
+  font-size: 40px;
+  padding: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  height: 35px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn-red {
+  background-color: red;
+}
+
+button:hover {
+  scale: 1.2;
+}
+
+.btn-green {
+  background-color: green;
+}
+
+button:hover {
+  scale: 1.2;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+button:hover {
+  scale: 1.2;
+}/*# sourceMappingURL=style.css.map */
